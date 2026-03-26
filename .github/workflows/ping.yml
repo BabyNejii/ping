@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Ping Recepto API
-        run: curl -I -s https://recepto-94x3.onrender.com/healthz
+        run: curl -f -I -s https://recepto-94x3.onrender.com/healthz
 
       - name: Prevent 60-Day Suspension (Dummy Commit)
         run: |
